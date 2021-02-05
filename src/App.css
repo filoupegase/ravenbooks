@@ -1,26 +1,11 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  min-height: 100vh;
+  background-color: #1e2b41;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100%;
   color: white;
 }
 
@@ -35,4 +20,66 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: white;
+}
+
+input {
+  padding: 0.6rem;
+  width: 300px;
+  margin-bottom: 1rem;
+}
+
+.add-review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn {
+  cursor: pointer;
+  width: 8rem;
+  padding: 1rem 0rem;
+  font-size: 1rem;
+  background-color: cornflowerblue;
+  color: white;
+  border: none;
+  border-radius: 2rem;
+}
+#btn:hover {
+  background-color: rgb(73, 119, 206);
+}
+
+.del-btn {
+  cursor: pointer;
+  width: 8rem;
+  padding: 1rem 0rem;
+  font-size: 1rem;
+  background-color: rgb(237, 100, 100);
+  color: white;
+  border: none;
+  border-radius: 2rem;
+}
+
+.del-btn:hover {
+  background-color: rgb(206, 73, 73);
+}
+
+.review {
+  border: 1px solid grey;
+  width: fit-content;
+  padding: 1em;
+}
+
+.reviews {
+  display: flex;
 }
